@@ -1,0 +1,211 @@
+:root {
+  --verde-bosque: #103b2b;
+  --dorado: #c9a24b;
+  --fondo-claro: #f7f5f0;
+  --texto: #222222;
+  --texto-suave: #555555;
+  --blanco: #ffffff;
+  --radius: 8px;
+  --shadow-suave: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background-color: var(--fondo-claro);
+  color: var(--texto);
+  line-height: 1.6;
+}
+
+/* NAVBAR */
+
+.header {
+  background: linear-gradient(135deg, var(--verde-bosque), #071c14);
+  color: var(--blanco);
+}
+
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 7%;
+  background: rgba(3, 25, 17, 0.96);
+  backdrop-filter: blur(8px);
+}
+
+.logo {
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--dorado);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: var(--blanco);
+  text-decoration: none;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.nav-links a:hover {
+  color: var(--dorado);
+}
+
+/* HERO */
+
+.hero {
+  padding: 5rem 7% 4rem;
+  display: flex;
+  align-items: center;
+  min-height: 65vh;
+}
+
+.hero-content {
+  max-width: 640px;
+}
+
+.hero h1 {
+  font-size: 2.6rem;
+  margin-bottom: 1rem;
+  color: var(--blanco);
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: #e8edea;
+  margin-bottom: 1.8rem;
+}
+
+/* SECCIONES GENERALES */
+
+.section {
+  padding: 4rem 7%;
+}
+
+.section-alt {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: var(--verde-bosque);
+}
+
+.section p {
+  color: var(--texto-suave);
+}
+
+/* CARDS DE PRODUCTOS */
+
+.cards {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  margin-top: 1rem;
+}
+
+.card {
+  background-color: var(--blanco);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-suave);
+  border-left: 4px solid var(--dorado);
+}
+
+.card h3 {
+  margin-bottom: 0.6rem;
+  color: var(--verde-bosque);
+}
+
+/* CONTACTO */
+
+.contacto {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+}
+
+.contacto-cta {
+  min-width: 220px;
+}
+
+/* BOTONES */
+
+.btn-primary {
+  display: inline-block;
+  padding: 0.9rem 1.8rem;
+  border-radius: 999px;
+  background-color: var(--dorado);
+  color: var(--verde-bosque);
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  box-shadow: var(--shadow-suave);
+}
+
+.btn-primary:hover {
+  background-color: #e0b85a;
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: #0a1f15;
+  color: #9da79f;
+  padding: 1.5rem 7%;
+}
+
+.footer-content {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .hero {
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+  }
+
+  .hero h1 {
+    font-size: 2.1rem;
+  }
+}
