@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nidal Trinidad — El huevo que se distingue</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lato:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#inicio" onclick="closeMobile()">Inicio</a>
+  <a href="#sobre" onclick="closeMobile()">Nosotros</a>
+  <a href="#productos" onclick="closeMobile()">Productos</a>
+  <a href="#contacto" onclick="closeMobile()">Contacto</a>
+</div>
+
+<!-- NAVBAR -->
+<nav class="nav" id="navbar">
+ <a href="#inicio" class="logo">
+  <img src="images/logo.svg" alt="Nidal Trinidad" class="logo-img">
+</a>
+  <ul class="nav-links">
+    <li><a href="#inicio">Inicio</a></li>
+    <li><a href="#sobre">Sobre la empresa</a></li>
+    <li><a href="#productos">Productos</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" onclick="toggleMobile()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<section id="inicio" class="hero">
+  <div class="hero-bg" id="heroBg"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">
+      <span class="eyebrow-line"></span>
+      Heliconia, Antioquia — Colombia
+      <span class="eyebrow-line"></span>
+    </div>
+    <h1>El huevo que<br><em>se distingue</em></h1>
+    <p>Avicultura de origen campesino, con estándares de calidad premium para hogares y clientes mayoristas.</p>
+    <div class="hero-actions">
+      <a class="btn-primary" href="https://api.whatsapp.com/send?phone=573052434974&text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20los%20huevos%20de%20Nidal%20Trinidad." target="_blank" rel="noopener noreferrer">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Escribir por WhatsApp
+      </a>
+      <a class="btn-outline" href="#sobre">Conocer más</a>
+    </div>
+  </div>
+  <div class="scroll-cue">Scroll</div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span class="ticker-item"><span class="dot"></span>Frescura garantizada</span>
+    <span class="ticker-item"><span class="dot"></span>Origen campesino</span>
+    <span class="ticker-item"><span class="dot"></span>Calidad premium</span>
+    <span class="ticker-item"><span class="dot"></span>Heliconia, Antioquia</span>
+    <span class="ticker-item"><span class="dot"></span>Atención personalizada</span>
+    <span class="ticker-item"><span class="dot"></span>Suministro mayorista</span>
+    <span class="ticker-item"><span class="dot"></span>Frescura garantizada</span>
+    <span class="ticker-item"><span class="dot"></span>Origen campesino</span>
+    <span class="ticker-item"><span class="dot"></span>Calidad premium</span>
+    <span class="ticker-item"><span class="dot"></span>Heliconia, Antioquia</span>
+    <span class="ticker-item"><span class="dot"></span>Atención personalizada</span>
+    <span class="ticker-item"><span class="dot"></span>Suministro mayorista</span>
+  </div>
+</div>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="stats-grid">
+    <div class="stat-item reveal">
+      <div class="stat-number"><span class="num" data-target="5000">0</span>+</div>
+      <div class="stat-label">Aves en producción</div>
+    </div>
+    <div class="stat-item reveal reveal-d2">
+      <div class="stat-number">100<span>%</span></div>
+      <div class="stat-label">Origen campesino</div>
+    </div>
+    <div class="stat-item reveal reveal-d3">
+      <div class="stat-number"><span class="num" data-target="24">0</span>h</div>
+      <div class="stat-label">Huevos siempre frescos</div>
+    </div>
+  </div>
+</div>
+
+<!-- SOBRE -->
+<section id="sobre" class="sobre">
+  <div class="container sobre-grid">
+    <div class="sobre-text reveal">
+      <div class="section-label">Nuestra historia</div>
+      <h2 class="section-title">Del campo antioqueño<br><em>a tu mesa</em></h2>
+      <p>En Nidal Trinidad unimos lo mejor del campo antioqueño con prácticas de producción responsable. Nuestro foco es ofrecer huevos frescos y de calidad, cuidando el bienestar de nuestras aves y la confianza de nuestros clientes.</p>
+      <blockquote class="sobre-quote">
+        "Cada huevo que llega a tu mesa lleva el cuidado, la honestidad y el sabor auténtico del campo."
+      </blockquote>
+      <p>Trabajamos tanto con consumidores finales como con clientes mayoristas que valoran un producto diferenciado, honesto y con respaldo.</p>
+    </div>
+    <div class="sobre-img reveal reveal-d2">
+      <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80" alt="Paisaje campesino antioqueño - Nidal Trinidad" loading="lazy" />
+      <div class="sobre-badge">
+        <strong>Nidal Trinidad</strong>
+        <span>Heliconia, Antioquia</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTOS -->
+<section id="productos" class="productos">
+  <div class="container">
+    <div class="section-label reveal">Lo que ofrecemos</div>
+    <h2 class="section-title reveal reveal-d1">Nuestros <em>productos</em></h2>
+    <p class="section-sub reveal reveal-d2">Cada formato está pensado para que el huevo llegue donde se necesita, con la frescura y el respaldo que nos caracterizan.</p>
+    <div class="productos-grid">
+
+      <article class="card reveal reveal-d1">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1498654896293-37aacf113fd9?auto=format&fit=crop&w=600&q=80" alt="Huevos frescos para el hogar - Nidal Trinidad" loading="lazy" />
+        </div>
+        <div class="card-body">
+          <div class="card-icon">🥚</div>
+          <h3>Huevos frescos a tu mesa</h3>
+          <p>Seleccionados con estándares de calidad premium, ideales para hogares que buscan sabor auténtico y confiable.</p>
+        </div>
+        <div class="card-footer">
+          <span class="card-tag">Para el hogar</span>
+        </div>
+      </article>
+
+      <article class="card reveal reveal-d2">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1582722872445-44dc5f7e3c8f?auto=format&fit=crop&w=600&q=80" alt="Huevos en presentación mayorista - Nidal Trinidad" loading="lazy" />
+        </div>
+        <div class="card-body">
+          <div class="card-icon">📦</div>
+          <h3>Presentaciones para mayoristas</h3>
+          <p>Empaques y formatos pensados para tiendas, restaurantes y aliados comerciales que requieren suministro estable.</p>
+        </div>
+        <div class="card-footer">
+          <span class="card-tag">Mayoristas</span>
+        </div>
+      </article>
+
+      <article class="card reveal reveal-d3">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1516467508483-a7212febe31a?auto=format&fit=crop&w=600&q=80" alt="Alianzas comerciales - Nidal Trinidad" loading="lazy" />
+        </div>
+        <div class="card-body">
+          <div class="card-icon">🤝</div>
+          <h3>Alianzas a la medida</h3>
+          <p>Diseñamos esquemas de suministro y logística adaptados a las necesidades de cada cliente y proyecto.</p>
+        </div>
+        <div class="card-footer">
+          <span class="card-tag">Alianzas</span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- GALERÍA -->
+<section class="galeria">
+  <div class="container">
+    <div class="section-label reveal">Nuestro campo</div>
+    <h2 class="section-title reveal reveal-d1">Una mirada a <em>nuestro origen</em></h2>
+    <div class="galeria-grid">
+      <div class="galeria-item galeria-main reveal">
+        <img src="https://images.unsplash.com/photo-1569629743817-70d8db6c323b?auto=format&fit=crop&w=900&q=80" alt="Huevos Nidal Trinidad - origen campesino" loading="lazy" />
+      </div>
+      <div class="galeria-item reveal reveal-d1">
+        <img src="https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=600&q=80" alt="Huevos frescos del campo" loading="lazy" />
+      </div>
+      <div class="galeria-item reveal reveal-d2">
+        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=600&q=80" alt="Naturaleza antioqueña" loading="lazy" />
+      </div>
+      <div class="galeria-item reveal reveal-d3">
+        <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&w=600&q=80" alt="Paisaje colombiano" loading="lazy" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto" class="contacto">
+  <div class="container contacto-grid">
+    <div class="contacto-text reveal">
+      <div class="section-label">Hablemos</div>
+      <h2 class="section-title">¿Listo para <em>ordenar?</em></h2>
+      <p>¿Quieres cotizar para tu hogar, negocio u operación mayorista? Escríbenos y conversemos sobre cómo Nidal Trinidad puede acompañar tu proyecto.</p>
+      <div class="contacto-info">
+        <div class="info-item">
+          <div class="info-icon">📍</div>
+          <span>Heliconia, Antioquia — Colombia</span>
+        </div>
+        <div class="info-item">
+          <div class="info-icon">⏰</div>
+          <span>Atendemos en horario laboral y respondemos personalmente cada mensaje.</span>
+        </div>
+        <div class="info-item">
+          <div class="info-icon">🚚</div>
+          <span>Despachos a la región con logística confiable y planificada.</span>
+        </div>
+      </div>
+    </div>
+    <div class="contacto-card reveal reveal-d2">
+      <div class="contacto-card-inner">
+        <h3>Escríbenos hoy</h3>
+        <p>Nuestro equipo está listo para atenderte y diseñar una propuesta a tu medida.</p>
+        <a class="btn-primary btn-wa" href="https://api.whatsapp.com/send?phone=573052434974&text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20los%20huevos%20de%20Nidal%20Trinidad." target="_blank" rel="noopener noreferrer">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Escribir por WhatsApp
+        </a>
+        <small>*Serás redirigido a WhatsApp.</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <span class="footer-logo">Nidal <em>Trinidad</em></span>
+    <span class="footer-copy">© 2026 Nidal Trinidad. Todos los derechos reservados.</span>
+    <span class="footer-loc">📍 Heliconia, Antioquia — Colombia</span>
+  </div>
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+<a class="wa-float" href="https://api.whatsapp.com/send?phone=573052434974&text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20los%20huevos%20de%20Nidal%20Trinidad." target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+  <svg viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script>
+  /* ——— NAVBAR SCROLL ——— */
+  const navbar = document.getElementById('navbar');
+  const onScroll = () => navbar.classList.toggle('scrolled', window.scrollY > 60);
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  /* ——— PARALLAX HERO ——— */
+  const heroBg = document.getElementById('heroBg');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY < window.innerHeight * 1.2) {
+      heroBg.style.transform = `scale(1.1) translateY(${window.scrollY * 0.22}px)`;
+    }
+  }, { passive: true });
+
+  /* ——— MOBILE MENU ——— */
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  function toggleMobile() {
+    const open = mobileMenu.classList.toggle('open');
+    hamburger.classList.toggle('active', open);
+    document.body.style.overflow = open ? 'hidden' : '';
+  }
+  function closeMobile() {
+    mobileMenu.classList.remove('open');
+    hamburger.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  /* ——— SCROLL REVEAL ——— */
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  /* ——— COUNTER ANIMATION ——— */
+  function countUp(el) {
+    const target = +el.dataset.target;
+    const dur = 1600;
+    let t0 = null;
+    const tick = ts => {
+      if (!t0) t0 = ts;
+      const p = Math.min((ts - t0) / dur, 1);
+      const ease = 1 - Math.pow(1 - p, 3);
+      el.textContent = Math.floor(ease * target).toLocaleString('es-CO');
+      if (p < 1) requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
+  }
+  const statObs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        countUp(e.target);
+        statObs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.5 });
+  document.querySelectorAll('.num[data-target]').forEach(el => statObs.observe(el));
+</script>
+
+</body>
+</html>
