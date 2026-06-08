@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 160" width="560" height="160">
+  <!-- Escudo mini -->
+  <rect x="24" y="4" width="7" height="22" rx="1.5" fill="#0f2e1a"/>
+  <rect x="41" y="4" width="7" height="22" rx="1.5" fill="#0f2e1a"/>
+  <polygon points="31,4 38,4 48,26 41,26" fill="#b8860b"/>
+  <rect x="27" y="24" width="21" height="3" rx="1.5" fill="#0f2e1a" opacity=".2"/>
+  <path d="M36 28 L62 37 L62 96 Q62 128 36 138 Q10 128 10 96 L10 37 Z" fill="#0f2e1a"/>
+  <path d="M36 33 L58 41 L58 95 Q58 122 36 131 Q14 122 14 95 L14 41 Z"
+        fill="none" stroke="#b8860b" stroke-width=".7" opacity=".30"/>
+  <path d="M14 102 Q36 114 58 102" fill="none" stroke="#b8860b" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M18 108 Q36 118 54 108" fill="none" stroke="#b8860b" stroke-width="1.1" stroke-linecap="round" opacity=".36"/>
+  <ellipse cx="25" cy="89" rx="7" ry="9" fill="#f6f1e8" stroke="#b8860b" stroke-width="1.2"/>
+  <ellipse cx="36" cy="85" rx="9" ry="11.5" fill="#b8860b" stroke="#0f2e1a" stroke-width="1.4"/>
+  <ellipse cx="47" cy="89" rx="7" ry="9" fill="#f6f1e8" stroke="#b8860b" stroke-width="1.2"/>
+  <!-- Wordmark -->
+  <text x="82" y="62" font-family="Barlow Condensed, sans-serif" font-weight="900" font-size="46"
+        fill="#0f2e1a" letter-spacing="3">NIDAL</text>
+  <text x="82" y="85" font-family="Barlow Condensed, sans-serif" font-weight="600" font-size="18"
+        fill="#b8860b" letter-spacing="6">TRINIDAD</text>
+  <!-- Tagline -->
+  <line x1="82" y1="104" x2="430" y2="104" stroke="#b8860b" stroke-width=".8" opacity=".45"/>
+  <text x="82" y="120" font-family="Barlow Condensed, sans-serif" font-weight="400" font-size="14"
+        fill="#5a5a5a" letter-spacing="2" font-style="italic">El huevo que se distingue</text>
+</svg>
