@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 600" width="380" height="600">
+  <!-- N remate heráldico -->
+  <rect x="168" y="8" width="11" height="40" rx="2.5" fill="#0f2e1a"/>
+  <rect x="201" y="8" width="11" height="40" rx="2.5" fill="#0f2e1a"/>
+  <polygon points="179,8 192,8 212,48 199,48" fill="#b8860b"/>
+  <rect x="172" y="46" width="36" height="5" rx="2.5" fill="#0f2e1a" opacity=".2"/>
+  <!-- Escudo V5.1 extendido -->
+  <path d="M190 54 L308 96 L308 294 Q308 404 190 440 Q72 404 72 294 L72 96 Z" fill="#0f2e1a"/>
+  <path d="M190 66 L296 105 L296 292 Q296 382 190 416 Q84 382 84 292 L84 105 Z"
+        fill="none" stroke="#b8860b" stroke-width="1" opacity="0.30"/>
+  <!-- Arcos nido -->
+  <path d="M98 306 Q190 354 282 306" fill="none" stroke="#b8860b" stroke-width="3.8" stroke-linecap="round"/>
+  <path d="M112 317 Q190 360 268 317" fill="none" stroke="#b8860b" stroke-width="1.8" stroke-linecap="round" opacity=".36"/>
+  <!-- Tres huevos -->
+  <ellipse cx="155" cy="272" rx="21" ry="28" fill="#f6f1e8" stroke="#b8860b" stroke-width="2"/>
+  <ellipse cx="190" cy="260" rx="26" ry="34" fill="#b8860b" stroke="#0f2e1a" stroke-width="2.5"/>
+  <ellipse cx="225" cy="272" rx="21" ry="28" fill="#f6f1e8" stroke="#b8860b" stroke-width="2"/>
+  <!-- Wordmark -->
+  <text x="190" y="388" font-family="Barlow Condensed, sans-serif" font-weight="900" font-size="34"
+        fill="#f6f1e8" text-anchor="middle" letter-spacing="4">NIDAL</text>
+  <text x="190" y="408" font-family="Barlow Condensed, sans-serif" font-weight="600" font-size="13"
+        fill="#b8860b" text-anchor="middle" letter-spacing="5">TRINIDAD</text>
+  <!-- Tagline -->
+  <line x1="112" y1="456" x2="268" y2="456" stroke="#b8860b" stroke-width=".9" opacity=".5"/>
+  <text x="190" y="474" font-family="Barlow Condensed, sans-serif" font-weight="400" font-size="12"
+        fill="#0f2e1a" text-anchor="middle" letter-spacing="2.5" font-style="italic">El huevo que se distingue</text>
+  <line x1="112" y1="483" x2="268" y2="483" stroke="#b8860b" stroke-width=".9" opacity=".5"/>
+</svg>
