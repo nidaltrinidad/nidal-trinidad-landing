@@ -581,11 +581,10 @@ section { padding: 6rem 6%; }
 }
 
 .badge-icon {
-  height: 26px;
-  min-height: 26px;
-  min-width: 26px;
-  width: auto;
+  height: 38px;
+  width: 38px;
   flex-shrink: 0;
+  object-fit: contain;
 }
 
 .sobre-badge strong {
