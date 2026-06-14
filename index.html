@@ -257,10 +257,14 @@
 
   // PARALLAX HERO
   const heroBg = document.getElementById('heroBg');
-  window.addEventListener('scroll', () => {
-    if (window.scrollY < window.innerHeight * 1.2)
-      heroBg.style.transform = `scale(1.1) translateY(${window.scrollY * 0.22}px)`;
-  }, { passive: true });
+window.addEventListener('scroll', () => {
+    if (window.scrollY < window.innerHeight * 1.2) {
+        if (window.innerWidth > 640)
+            heroBg.style.transform = `scale(1.1) translateY(${window.scrollY * 0.22}px)`;
+        else
+            heroBg.style.transform = 'scale(1)';
+    }
+}, { passive: true });
 
   // MOBILE MENU
   const hamburger = document.getElementById('hamburger');
