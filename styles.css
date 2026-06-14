@@ -1024,13 +1024,13 @@ section { padding: 6rem 6%; }
   .contacto-card-inner { padding: 2rem; 
    }
 
-   .hero-bg {
-  transform: scale(1);
-  background-position: center center;
-  background-size: cover;
+  .hero-bg {
+  transform: scale(1) !important;
+  background-position: center top !important;
+  background-attachment: scroll !important;
 }
 
-   .sobre-badge {
+  .sobre-badge {
   position: relative;
   bottom: auto;
   left: auto;
