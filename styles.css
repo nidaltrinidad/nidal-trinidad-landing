@@ -1021,5 +1021,27 @@ section { padding: 6rem 6%; }
   .footer-loc { order: 3; }
 
   .hero-actions { flex-direction: column; align-items: flex-start; }
-  .contacto-card-inner { padding: 2rem; }
+  .contacto-card-inner { padding: 2rem; 
+   }
+
+   .hero-bg {
+  transform: scale(1);
+  background-position: center center;
+  background-size: cover;
 }
+
+   .sobre-badge {
+  position: relative;
+  bottom: auto;
+  left: auto;
+  margin-top: 1rem;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.sobre-img {
+  overflow: visible; }
+}
+
